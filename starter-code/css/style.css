@@ -1,5 +1,6 @@
 body,
 h1,
+h2,
 p {
   margin: 0;
 }
@@ -20,6 +21,14 @@ body {
     padding-bottom: 198px;
     color: #fff;
 
+    img {
+      /* margin-bottom: 153px; */
+      margin-block-end: 153px;
+    }
+    div {
+      max-width: 508px;
+    }
+
     h1 {
       font-weight: 300;
       font-size: 80px;
@@ -32,6 +41,8 @@ body {
       line-height: 30px;
       /* line-height: 1.5;  */
       margin-bottom: 40px;
+      /* width: 445px; */
+      max-width: 445px;
     }
     a {
       color: inherit;
@@ -41,6 +52,44 @@ body {
       /* border-color: inherit; */
       padding: 25px 55px 23px 54px;
       text-transform: uppercase;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 16px;
+      letter-spacing: 2.5px;
+    }
+  }
+
+  main {
+    section {
+    }
+    .base {
+      height: 705px;
+      background-color: #d8a6a6;
+      div {
+        max-width: 445px;
+        /* padding-top: 55px; */
+        padding-block-start: 55px;
+        h2 {
+          margin-block-end: 27px;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 48px;
+          letter-spacing: -0.5px;
+          color: #242b37;
+        }
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          color: #242b37;
+        }
+      }
+    }
+    .enjoy {
+      margin-block-end: 20px;
+    }
+    .local {
+      /* background-color: #fff; */
     }
   }
 }
