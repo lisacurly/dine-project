@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- #region Header -->
-    <!-- <header>
+    <header>
       <section class="container">
         <img src="./images/logo.svg  " alt="logo-of-dine-restaurant" />
         <div>
@@ -34,40 +34,46 @@
             the freshest produce from the comfort of our farmhouse.
           </p>
 
-          <a href="./booking.html">Book a table</a>
+          <a class="booking-btn" href="./booking.html">Book a table</a>
         </div>
       </section>
-    </header> -->
+    </header>
     <!-- #endregion -->
 
     <!-- #region Main -->
     <main>
       <!-- #region section enjoy -->
-      <!-- <section class="base enjoy container">
-        <div>
-          <h2>Enjoyable place for all the family</h2>
-
-          <p>
-            Our relaxed surroundings make dining with us a great experience for
-            everyone. We can even arrange a tour of the farm before your meal
-          </p>
-        </div>
-      </section> -->
+     <div class="big-container big-container-leftbg">
+        <section class="base enjoy container">
+          <div class="enjoy-img"></div>
+          <div>
+            <h2>Enjoyable place for all the family</h2>
+  
+            <p>
+              Our relaxed surroundings make dining with us a great experience for
+              everyone. We can even arrange a tour of the farm before your meal
+            </p>
+          </div>
+        </section>
+     </div>
       <!-- #endregion -->
       <!-- #region section local -->
-      <!-- <section class="base local container">
-        <div>
-          <h2>The most locally sourced food</h2>
-
-          <p>
-            All our ingredients come directly from our farm or local fishery. So
-            you can be sure that you’re eating the freshest, most sustainable
-            food
-          </p>
-        </div>
-      </section> -->
+      <div class="big-container big-container-rightbg">
+        <section class="base local container">
+          <div>
+            <h2>The most locally sourced food</h2>
+  
+            <p>
+              All our ingredients come directly from our farm or local fishery. So
+              you can be sure that you’re eating the freshest, most sustainable
+              food
+            </p>
+          </div>
+          <div class="local-img"></div>
+        </section>
+      </div>
       <!-- #endregion -->
-
+      <!-- #region section menu -->
       <section class="menu">
         <div class="base container">
           <div>
@@ -80,34 +86,72 @@
 
           <article class="menu-items">
             <article>
-              <img src="./images/homepage/salmon-desktop-tablet.jpg" alt="salmon-fillet pic">
+              <img
+                src="./images/homepage/salmon-desktop-tablet.jpg"
+                alt="salmon-fillet pic"
+              />
               <h3>Seared Salmon Fillet</h3>
               <p>
-                Our locally sourced salmon served with a refreshing buckwheat summer salad.
+                Our locally sourced salmon served with a refreshing buckwheat
+                summer salad.
               </p>
             </article>
-  
+
             <article>
-              <img src="./images/homepage/beef-desktop-tablet.jpg" alt="beef pic">
+              <img
+                src="./images/homepage/beef-desktop-tablet.jpg"
+                alt="beef pic"
+              />
               <h3>Rosemary Filet Mignon</h3>
               <p>
-                Our prime beef served to your taste with a delicious choice of seasonal sides.
+                Our prime beef served to your taste with a delicious choice of
+                seasonal sides.
               </p>
             </article>
-            
+
             <article>
-              <img src="./images/homepage/chocolate-desktop-tablet.jpg" alt="chocolate mousse pic">
+              <img
+                src="./images/homepage/chocolate-desktop-tablet.jpg"
+                alt="chocolate mousse pic"
+              />
               <h3>Summer Fruit Chocolate Mousse</h3>
-              <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+              <p>
+                Creamy mousse combined with summer fruits and dark chocolate
+                shavings.
+              </p>
             </article>
           </article>
         </div>
       </section>
+      <!-- #endregion -->
+      <!-- #region sevtion family -->
+      <section class="base family container">
+        <div class="family-img">
+          <img
+            src="./images/homepage/family-gathering-desktop.jpg"
+            alt="group of people enjoing dinner"
+          />
+        </div>
+        <div>
+          <h2>Family Gathering</h2>
 
-      <!-- Family Gathering Special Events Social Events Family
-      Gathering We love catering for entire families. So please bring everyone
-      along for a special meal with your loved ones. We’ll provide a memorable
-      experience for all. Special Events Whether it’s a romantic dinner or
+          <p>
+            We love catering for entire families. So please bring everyone along
+            for a special meal with your loved ones. We’ll provide a memorable
+            experience for all.
+          </p>
+          <a class="booking-btn" href="./booking.html">Book a table</a>
+
+          <ul>
+            <li class="active">Family Gathering</li>
+            <li>Special Events</li>
+            <li>Social Events</li>
+          </ul>
+        </div>
+      </section>
+      <!-- #endregion -->
+
+      <!-- Special Events Whether it’s a romantic dinner or
       special date you’re celebrating with others we’ll look after you. We’ll be
       sure to mark your special date with an unforgettable meal. Social Events
       Are you looking to have a larger social event? No problem! We’re more than
@@ -117,11 +161,23 @@
     <!-- #endregion -->
 
     <!-- #region Footer -->
-    <!-- <footer>
-      Ready to make a reservation? Book a table Marthwaite, Sedbergh Cumbria +00
-      44 123 4567 Open Times Mon - Fri: 09:00 AM - 10:00 PM Sat - Sun: 09:00 AM
-      - 11:30 PM
-    </footer> -->
+    <footer>
+      <!-- Ready to make a reservation? Book a table  -->
+
+      <div class="footer-bottom container">
+        <img src="./images/logo.svg  " alt="logo-of-dine-restaurant" />
+        <address>
+          <a href="#"> Marthwaite, Sedbergh Cumbria </a>
+          <a href="tel:+0044 123 4567">+0044 123 4567 </a>
+        </address>
+
+        <article>
+          <h2>Open Times</h2>
+          <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+          <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </article>
+      </div>
+    </footer>
     <!-- #endregion -->
   </body>
 </html>

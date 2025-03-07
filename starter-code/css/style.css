@@ -5,7 +5,8 @@ body,
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 a {
@@ -13,9 +14,9 @@ a {
   text-decoration: none;
 }
 .container {
-  background-color: #04545d;
-  /* width: 1110px; */
-  max-width: 1130px;
+  /* background-color: #d9bf18; */
+  width: 1130px;
+  /* max-width: 1130px; */
   margin-inline-end: auto;
   margin-inline-start: auto;
   padding-inline-start: 10px;
@@ -28,11 +29,33 @@ body {
   font-weight: 400;
   font-style: normal;
 
+  a.booking-btn {
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #fff;
+    /* border: 1px solid transparent; */
+    /* border-color: inherit; */
+    padding: 25px 55px 23px 54px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: 2.5px;
+  }
+
   header {
-    background-color: #111;
+    /* background-color: #111;  */
     padding-top: 65px;
     padding-bottom: 198px;
     color: #fff;
+    background-image: url(../images/homepage/hero-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-position: center top; */
+    background-size: cover;
+
+    height: 100vh;
 
     img {
       /* margin-bottom: 153px; */
@@ -57,30 +80,35 @@ body {
       /* width: 445px; */
       max-width: 445px;
     }
-    a {
-      color: inherit;
-      text-decoration: none;
-      border: 1px solid #fff;
-      /* border: 1px solid transparent; */
-      /* border-color: inherit; */
-      padding: 25px 55px 23px 54px;
-      text-transform: uppercase;
-      display: inline-block;
-      font-weight: 600;
-      font-size: 17px;
-      line-height: 16px;
-      letter-spacing: 2.5px;
-    }
   }
 
   main {
+    .big-container {
+      max-width: 1440px;
+      /* background-color: #238832; */
+
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      background-repeat: no-repeat;
+    }
+    .big-container-leftbg {
+      background-image: url(../images/patterns/pattern-curve-top-right.svg);
+      background-position: left center;
+    }
+    .big-container-rightbg {
+      background-image: url(../images/patterns/pattern-curve-top-left.svg);
+      background-position: right bottom;
+    }
     .base {
-      height: 705px;
+      min-height: 705px;
       /* background-color: #d8a6a6; */
       div {
         max-width: 445px;
         /* padding-top: 55px; */
         padding-block-start: 55px;
+        background-image: url(../images/patterns/pattern-divide.svg);
+        background-repeat: no-repeat;
+        background-position: left top;
         h2 {
           margin-block-end: 27px;
           font-weight: 700;
@@ -95,13 +123,33 @@ body {
           color: #242b37;
         }
       }
+      .enjoy-img {
+        background-image: url(../images/homepage/enjoyable-place-desktop.jpg);
+        padding: 0;
+        max-width: 540px;
+        height: 720px;
+        /* background-color: aqua; */
+        /* background-size: 955px 1430px;
+        background-position: left -230px top -452px; */
+      }
+      .local-img {
+        background-image: url(../images/homepage/locally-sourced-desktop.jpg);
+        padding: 0;
+        max-width: 540px;
+        height: 720px;
+        /* background-color: aqua; */
+      }
+      div.family-img {
+        max-width: 540px;
+        height: 600px;
+      }
     }
     .enjoy {
       padding-block-start: 180px;
       padding-block-end: 250px;
       /* margin-block-end: 10px; */
       div {
-        margin-inline-start: auto;
+        /* margin-inline-start: auto; */
       }
     }
     .local {
@@ -134,6 +182,56 @@ body {
             line-height: 26px;
           }
         }
+      }
+    }
+    .base.family {
+      div {
+        background-image: none;
+        padding-block-start: 0;
+      }
+      p {
+        margin-block-end: 60px;
+      }
+      a.booking-btn {
+        /* background-color: rgba(17, 17, 17, 0.5); */
+        /* opacity: 0.5; */
+        /* color: #cf2020; */
+        background-color: #111;
+        color: #fff;
+        margin-block-end: 79px;
+      }
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+        li {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 28px;
+          letter-spacing: 2.5px;
+          color: #4c4c4c;
+          opacity: 0.5;
+          margin-block-end: 12px;
+        }
+        li.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #111;
+    .footer-bottom {
+      a,
+      h2,
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
       }
     }
   }
