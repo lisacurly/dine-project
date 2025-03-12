@@ -22,7 +22,9 @@ a {
   padding-inline-start: 10px;
   padding-inline-end: 10px;
 }
-
+.flx {
+  display: flex;
+}
 body {
   font-family: "League Spartan", serif;
   font-optical-sizing: auto;
@@ -148,9 +150,9 @@ body {
       padding-block-start: 180px;
       padding-block-end: 250px;
       /* margin-block-end: 10px; */
-      div {
-        /* margin-inline-start: auto; */
-      }
+      /* div {
+        margin-inline-start: auto;
+      } */
     }
     .local {
       padding-block-start: 250px;
